@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # Service name
@@ -25,3 +26,4 @@ else
         echo "Failed to install $SERVICE. Please check your package manager or internet connection."
     fi
 fi
+
