@@ -17,6 +17,8 @@ else
 
     if [ $? -eq 0 ]; then
         echo "$SERVICE has been successfully installed."
+        echo "Displaying the status of the newly installed $SERVICE service:"
+        sudo systemctl status $SERVICE
         echo "Starting the $SERVICE service..."
         sudo systemctl start $SERVICE
         echo "$SERVICE service has been started."
